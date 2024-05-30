@@ -2,10 +2,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment Tracker</title>
-  <link rel="icon" href="/static/favicon.png">
+  <title>DueTrack</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
-  <h1>Welcome to the Assignment Tracker!</h1>
+  <div class="nav">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/logo-b.png') }}" alt="logo">
+      <a href="./index.html" class="logo-title">DueTrack</a>
+    </div>
+    <div class="menus">
+      <a href="https://github.com/ali5917/assignment-tracker" class="git" target="_blank" title="Github Repository">
+        <i class="ri-github-line"></i>
+      </a>
+      <div class="dropdown-container">
+        <p>Contributers</p>
+        <i class="ri-arrow-down-s-line"></i>
+        <div class="dropdown-content">
+          <a href="https://github.com/ali5917" class="ali" target="_blank">Ali Kashif</a>
+          <a href="https://github.com/ismailsilat7" class="ismail" target="_blank">Ismail Silat</a>
+        </div>
+      </div>
+      <a href="#" class="about">About</a>
+      <a href="#" class="sign-in">Sign in</a>
+      <div class="start-box">
+        <a href="#" class="start">Start for free</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main-container">
+    <p class="first">Track</p>
+    <p class="second">Progress</p>
+    <button class="sign-up">Sign Up Now</button>
+  </div>
+
+
+
+
+
+
+
+  <!-- Link your JavaScript file here -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

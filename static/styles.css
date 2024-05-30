@@ -1,0 +1,206 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 1em;
+}
+
+
+body {
+  width: 100wh;
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom:30px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.logo a{
+  color: white;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about, .sign-in {
+  width: 80px;
+  text-align: center;
+}
+
+.about:hover, .sign-in:hover {
+  font-weight: bolder;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* min-width: 180px; */
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: auto;
+
+}
+
+.git i {
+  font-size: 30px;
+  font-weight: 100;
+  transition: all ease;
+}
+
+.git:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-container i{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: flex;
+  border: 1px solid white;
+}
+
+.dropdown-content a:hover {
+  color: white ;
+  background-color: black;
+}
+
+.start-box {
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: solid 2px white;
+  box-shadow: 0 0 15px rgba(138, 138, 138, 0.781);
+}
+
+.start {
+  color: black;
+  font-weight: 600;
+}
+
+.start-box:hover {
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 0 20px 1px rgb(145, 145, 145);
+  box-shadow: 0 0 20px 0 rgba(167, 167, 167, 0.507);
+}
+
+.start-box:hover .start {
+  color: white;
+}
+
+.main-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 100px;
+  gap: 0;
+  height: 90%;
+}
+
+.first {
+  font-size: 200px;
+  font-weight: 700;
+  align-self: flex-start;
+  line-height: 80%;
+}
+
+.second {
+  font-size: 180px;
+  font-weight: 600;
+  align-self: flex-end;
+  line-height: 80%;
+}
+
+.main-container button {
+  width: 200px;
+  padding: 1em 2em;
+  font-size: 18px;
+  background: none;
+  color: white;
+  border-radius: 30px;
+  border: solid, 3px, white;
+  margin-top: 5em;
+  transition: all 0.5s ease;
+  box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+}
+
+.main-container button:hover {
+  color: black;
+  cursor: pointer; 
+  box-shadow: inset 200px 0 0 0 rgb(255, 255, 255);
+  font-weight: bolder;
+} 
+
