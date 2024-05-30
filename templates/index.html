@@ -11,8 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- REMIXICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 </head>
 <body>
@@ -46,6 +49,42 @@
     <p class="first">Track</p>
     <p class="second">Progress</p>
     <button class="sign-up">Sign Up Now</button>
+  </div>
+
+
+  <div class="feature-container">
+    <video src="{{ url_for('static', filename='videos/animation1.mp4') }}" autoplay loop muted></video>
+    <div class="vertical-line"></div>
+    <div class="feature-content">
+      <div class="ft 1">
+        <i class="ri-user-line"></i>
+        <p>Create a free account</p>
+      </div>
+      <div class="ft 2">
+        <i class="material-symbols-outlined">web_traffic</i>
+        <p>Sign in</p>
+      </div>
+      <div class="ft 3">
+        <i class="ri-add-circle-line"></i>
+        <p>Add Tasks</p>
+      </div>
+      <div class="ft 4">
+        <i class="ri-flag-fill"></i>
+        <p>Set Priorities</p>
+      </div>
+      <div class="ft 5">
+        <i class="material-symbols-outlined">clock_loader_40</i>
+        <p>Track your progress</p>
+      </div>
+      <div class="ft 6">
+        <i class="ri-alarm-line"></i>
+        <p>Get regular reminders</p>
+      </div>
+      <div class="ft 7">
+        <i class="material-symbols-outlined">verified</i>
+        <p>Mark tasks completions</p>
+      </div>
+    </div>
   </div>
 
 
