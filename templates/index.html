@@ -19,7 +19,8 @@
 
 </head>
 <body>
-  <div class="nav">
+  <div class="nav" data-logo-black="{{ url_for('static', filename='images/logo-w.png') }}" 
+  data-logo-white="{{ url_for('static', filename='images/logo-b.png') }}">
     <div class="logo">
       <img src="{{ url_for('static', filename='images/logo-b.png') }}" alt="logo">
       <a href="./index.html" class="logo-title">DueTrack</a>
@@ -45,17 +46,17 @@
   </div>
 
 
-  <div class="main-container">
+  <div class="main-container" id="section-1">
     <p class="first">Track</p>
     <p class="second">Progress</p>
     <button class="sign-up">Sign Up Now</button>
   </div>
 
 
-  <div class="feature-container">
+  <div class="features-container" id="section-2">
     <video src="{{ url_for('static', filename='videos/animation1.mp4') }}" autoplay loop muted></video>
     <div class="vertical-line"></div>
-    <div class="feature-content">
+    <div class="features-content">
       <div class="ft 1">
         <i class="ri-user-line"></i>
         <p>Create a free account</p>
@@ -66,7 +67,7 @@
       </div>
       <div class="ft 3">
         <i class="ri-add-circle-line"></i>
-        <p>Add Tasks</p>
+        <p>Add tasks</p>
       </div>
       <div class="ft 4">
         <i class="ri-flag-fill"></i>
@@ -87,7 +88,44 @@
     </div>
   </div>
 
-
+  <div class="test-container" id="section-3">
+    <p class="test-head">Testimonials</p>
+    <div class="test-content">
+      <div class="test-item">
+        <div class="horizontal-line"></div>
+        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+        <div class="test-details-container">
+          <img src="{{ url_for('static', filename='images/test-1.png') }}">
+          <div class="test-details-item">
+            <p>Big Girl</p>
+            <p class="prof">Social Media Influencer</p>
+          </div>
+        </div>
+      </div>
+      <div class="test-item">
+        <div class="horizontal-line"></div>
+        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+        <div class="test-details-container">
+          <img src="{{ url_for('static', filename='images/test-2.png') }}" alt="">
+          <div class="test-details-item">
+            <p>Small Singh</p>
+            <p class="prof">Rang Panjab Label Founder</p>
+          </div>
+        </div>
+      </div>
+      <div class="test-item">
+        <div class="horizontal-line"></div>
+        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+        <div class="test-details-container">
+          <img src="{{ url_for('static', filename='images/test-3.png') }}" alt="">
+          <div class="test-details-item">
+            <p>Karen Not Karen</p>
+            <p class="prof">VJ at Green Chilis Radio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
