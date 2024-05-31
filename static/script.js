@@ -133,5 +133,3 @@ window.addEventListener('scroll', function() {
   }
   
 })
-
-// scroll to top btn

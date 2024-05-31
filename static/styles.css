@@ -79,7 +79,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* min-width: 180px; */
   cursor: pointer;
 }
 
@@ -278,7 +277,6 @@
 
 .test-text {
   font-size: 20px;
-  /* font-weight: 300; */
 }
 
 .horizontal-line {
