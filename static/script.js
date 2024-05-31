@@ -1,7 +1,7 @@
 // changing styles for navbar
 
 window.addEventListener('scroll', function() {
-  const featuresSection = document.getElementById('section-2')
+  const featuresSection = document.getElementById('features')
   const featuresSectionTop = featuresSection.offsetTop
   const navbar = document.querySelector('.nav');
   const logoTitle = document.querySelector('.logo-title');
@@ -134,11 +134,10 @@ window.addEventListener('scroll', function() {
   
 })
 
+// toggle class for hamburger menu
 const hamburger = document.getElementById('hamburger');
 const menus = document.getElementById('menus');
 
-
 hamburger.addEventListener('click',() => {
-    menus.classList.toggle('show');
-    
+  menus.classList.toggle('show');  
 });
