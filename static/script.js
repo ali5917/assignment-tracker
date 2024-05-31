@@ -5,6 +5,7 @@ window.addEventListener('scroll', function() {
   const featuresSectionTop = featuresSection.offsetTop
   const navbar = document.querySelector('.nav');
   const logoTitle = document.querySelector('.logo-title');
+  const elements = document.querySelectorAll('.about, .sign-in');
   const about = document.querySelector('.about');
   const signIn = document.querySelector('.sign-in');
   const contributers = document.querySelector('.dropdown-container p');
@@ -18,6 +19,7 @@ window.addEventListener('scroll', function() {
   const dropItem = document.querySelectorAll('.dropdown-content a')
   const startBox = document.querySelector('.start-box')
   const startText = document.querySelector('.start')
+  const scrollBtn = document.getElementById('scroll-btn')
 
 
   if (window.scrollY >= featuresSectionTop) {
@@ -25,6 +27,15 @@ window.addEventListener('scroll', function() {
     logoTitle.style.color = 'black'
     about.style.color = 'black'
     signIn.style.color = 'black'
+    elements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+      element.style.textShadow = '1px 1px 2px rgba(0, 0, 0, 0.4)'
+      })
+      element.addEventListener('mouseleave', () => {
+      element.style.textShadow = 'none'
+      })
+    })
+    
     contributers.style.color = 'black'
     logoImg.src = logoBlack;
     gitIcon.style.color = 'black'
@@ -60,12 +71,28 @@ window.addEventListener('scroll', function() {
         item.style.color = 'white'
       })
     })
+
+    scrollBtn.style.display = 'flex'
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+    })
   }
   else {
     navbar.style.backgroundColor = 'black'
     logoTitle.style.color = 'white'
     about.style.color = 'white'
     signIn.style.color = 'white'
+    elements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+      element.style.textShadow = '0 0 2px rgb(255, 255, 255)'
+      })
+      element.addEventListener('mouseleave', () => {
+      element.style.textShadow = 'none'
+      })
+    })
     contributers.style.color = 'white'
     logoImg.src = logoWhite;
     gitIcon.style.color = 'white'
@@ -101,5 +128,10 @@ window.addEventListener('scroll', function() {
         item.style.color = 'black'
       })
     })
+
+    scrollBtn.style.display = 'none'
   }
+  
 })
+
+// scroll to top btn

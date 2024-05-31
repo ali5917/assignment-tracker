@@ -70,7 +70,8 @@
 }
 
 .about:hover, .sign-in:hover {
-  font-weight: bolder;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
 }
 
 .dropdown-container {
@@ -277,6 +278,7 @@
 
 .test-text {
   font-size: 20px;
+  /* font-weight: 300; */
 }
 
 .horizontal-line {
@@ -316,5 +318,99 @@
 
 .test-details-item .prof {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 200;
+}
+
+.quotes-container {
+  background-color: black;
+  height: 100vh;
+  padding: 3em 60px;
+  background-image: url('./images/quote-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.q-item {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.q-text {
+  line-height: 100%;
+  font-size: 40px;
+  font-style: italic;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.q-name {
+  font-size: 25px;
+  align-self: flex-end;
+  color: rgb(184, 181, 181);
+}
+
+.q-item.one, .q-item.three {
+  align-self: flex-start;
+}
+
+.q-item.two {
+  align-self: flex-end;
+}
+
+.mark {
+  color: yellow;
+  font-size: 45x;
+  font-weight: lighter;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.514);
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.footer p, .footer a {
+  display: inline-block;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+#scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 8px rgb(255, 255, 255);
+  border: none;
+  opacity: 0.6;
+  transition: all ease 0.3s;
+  border-radius: 50%;
+  border: dotted 2px black;
+}
+
+#scroll-btn:hover {
+  opacity: 1;
+}
+
+#scroll-btn i{
+  font-size: 40px;
+  color: black;
 }
