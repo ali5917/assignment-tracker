@@ -38,6 +38,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -68,6 +69,19 @@ body {
   gap: 1.5em;
   font-size: 20px;
   font-weight: 500;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 
 .about, .sign-in {
@@ -204,3 +218,85 @@ body {
   font-weight: bolder;
 } 
 
+@media screen and (max-width: 1100px) {
+  .main-container {
+    height: calc(100vh - 110px);
+  }
+  .first {
+    font-size: 130px;
+    line-height: 80%;
+  }
+  .second {
+    font-size: 118px;
+    line-height: 80%;
+  }
+  .logo img {
+    height: 45px;
+    width: auto;
+  }
+  .menus {
+    font-size: 18px;
+    min-height: 20%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .main-container button {
+    width: 150px;
+    font-size: 12px;
+    margin-top: 2.5em;
+  }
+  .menus {
+    display: none;
+    width: 100%;
+    font-size: 18px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menus.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    position: relative;
+  }
+  .first {
+    font-size: 100px;
+    line-height: 100%;
+  }
+  .second {
+    font-size: 90px;
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .first, .second {
+    font-size: 50px;
+    align-self: center;
+  }
+  .main-container button {
+    width: 125px;
+    font-size: 10px;
+    margin-top: 2em;
+  }
+  .main-container {
+    height: calc(80vh - 110px);
+  }
+  .hamburger {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .logo img {
+    height: 30px;
+    width: auto;
+  }
+  .menus {
+    font-size: 15px;
+    min-height: 20%;
+  }
+}
