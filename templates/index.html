@@ -19,145 +19,159 @@
 
 </head>
 <body>
-  <div class="nav" data-logo-black="{{ url_for('static', filename='images/logo-w.png') }}" 
-  data-logo-white="{{ url_for('static', filename='images/logo-b.png') }}">
-    <div class="logo">
-      <img src="{{ url_for('static', filename='images/logo-b.png') }}" alt="logo">
-      <a href="./index.html" class="logo-title">DueTrack</a>
+  <div id="index-page">
+    <div class="nav" data-logo-black="{{ url_for('static', filename='images/logo-w.png') }}" 
+    data-logo-white="{{ url_for('static', filename='images/logo-b.png') }}">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo-b.png') }}" alt="logo">
+        <a href="./index.html" class="logo-title">DueTrack</a>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <i class="ri-menu-line"></i>
+      </button>
+      <div class="menus" id="menus">
+        <a href="https://github.com/ali5917/assignment-tracker" class="git" target="_blank" title="Github Repository">
+          <i class="ri-github-line"></i>
+        </a>
+        <div class="dropdown-container">
+          <p>Contributers</p>
+          <i class="ri-arrow-down-s-line"></i>
+          <div class="dropdown-content">
+            <a href="https://github.com/ali5917" class="ali" target="_blank">Ali Kashif</a>
+            <a href="https://github.com/ismailsilat7" class="ismail" target="_blank">Ismail Silat</a>
+          </div>
+        </div>
+        <a href="#features" class="feature about">Features</a>
+        <a href="#" class="sign-in">Sign in</a>
+        <div class="start-box">
+          <a href="#" class="start">Start for free</a>
+        </div>
+      </div>
     </div>
-    <button class="hamburger" id="hamburger">
-      <i class="ri-menu-line"></i>
+
+
+    <div class="main-container" id="section-1">
+      <p class="first">Track</p>
+      <p class="second">Progress</p>
+      <button class="sign-up">Sign Up Now</button>
+    </div>
+
+
+    <div class="features-container" id="features">
+      <video src="{{ url_for('static', filename='videos/animation1.mp4') }}" autoplay loop muted></video>
+      <div class="vertical-line"></div>
+      <div class="features-content">
+        <div class="ft 1">
+          <i class="ri-user-line"></i>
+          <p>Create a free account</p>
+        </div>
+        <div class="ft 2">
+          <i class="material-symbols-outlined">web_traffic</i>
+          <p>Sign in</p>
+        </div>
+        <div class="ft 3">
+          <i class="ri-add-circle-line"></i>
+          <p>Add tasks</p>
+        </div>
+        <div class="ft 4">
+          <i class="ri-flag-fill"></i>
+          <p>Set Priorities</p>
+        </div>
+        <div class="ft 5">
+          <i class="material-symbols-outlined">clock_loader_40</i>
+          <p>Track your progress</p>
+        </div>
+        <div class="ft 6">
+          <i class="ri-alarm-line"></i>
+          <p>Get regular reminders</p>
+        </div>
+        <div class="ft 7">
+          <i class="material-symbols-outlined">verified</i>
+          <p>Mark tasks completions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="test-container" id="section-3">
+      <p class="test-head">Testimonials</p>
+      <div class="test-content">
+        <div class="test-item">
+          <div class="horizontal-line"></div>
+          <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+          <div class="test-details-container">
+            <img src="{{ url_for('static', filename='images/test-1.png') }}">
+            <div class="test-details-item">
+              <p>Big Girl</p>
+              <p class="prof">Social Media Influencer</p>
+            </div>
+          </div>
+        </div>
+        <div class="test-item">
+          <div class="horizontal-line"></div>
+          <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+          <div class="test-details-container">
+            <img src="{{ url_for('static', filename='images/test-2.png') }}" alt="">
+            <div class="test-details-item">
+              <p>Small Singh</p>
+              <p class="prof">Rang Panjab Label Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="test-item">
+          <div class="horizontal-line"></div>
+          <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
+          <div class="test-details-container">
+            <img src="{{ url_for('static', filename='images/test-3.png') }}" alt="">
+            <div class="test-details-item">
+              <p>Karen Not Karen</p>
+              <p class="prof">VJ at Green Chilis Radio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quotes-container" id="section-4">
+      <div class="q-item one">
+        <p class="q-text"><span class="mark">"</span> The key is not to prioritize what is on schedule, but to schedule your priorities.<span class="mark">"</span></p>
+        <p class="q-name">- Stephen R. Covey</p>
+      </div>
+      <div class="q-item two">
+        <p class="q-text"><span class="mark">"</span> Success is not about getting everything done, but getting the right things done at the right time.<span class="mark">"</span></p>
+        <p class="q-name">- Laura Stack</p>
+      </div>
+      <div class="q-item three">
+        <p class="q-text"><span class="mark">"</span> Let our advance worrying become advance thinking and planning.<span class="mark">"</span></p>
+        <p class="q-name">- Winston Churchill</p>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://github.com/ali5917" target="_blank">Ali Kashif</a>
+      <p>-</p>
+      <a href="https://cs50.harvard.edu/x/2024/" target="_blank">CS50x</a>
+      <p>-</p>
+      <a href="https://github.com/ismailsilat7" target="_blank">Ismail Silat</a>
+    </div>
+
+    <button id="scroll-btn" title="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
     </button>
-    <div class="menus" id="menus">
-      <a href="https://github.com/ali5917/assignment-tracker" class="git" target="_blank" title="Github Repository">
-        <i class="ri-github-line"></i>
-      </a>
-      <div class="dropdown-container">
-        <p>Contributers</p>
-        <i class="ri-arrow-down-s-line"></i>
-        <div class="dropdown-content">
-          <a href="https://github.com/ali5917" class="ali" target="_blank">Ali Kashif</a>
-          <a href="https://github.com/ismailsilat7" class="ismail" target="_blank">Ismail Silat</a>
-        </div>
-      </div>
-      <a href="#features" class="feature about">Features</a>
-      <a href="#" class="sign-in">Sign in</a>
-      <div class="start-box">
-        <a href="#" class="start">Start for free</a>
-      </div>
-    </div>
   </div>
-
-
-  <div class="main-container" id="section-1">
-    <p class="first">Track</p>
-    <p class="second">Progress</p>
-    <button class="sign-up">Sign Up Now</button>
+  <!-- preloader -->
+  <div id="preloader">
+    <img src="{{ url_for('static', filename='images/preloader.gif') }}">
+    <h3 class="preloader-text">Redirecting ...</h3>
   </div>
-
-
-  <div class="features-container" id="features">
-    <video src="{{ url_for('static', filename='videos/animation1.mp4') }}" autoplay loop muted></video>
-    <div class="vertical-line"></div>
-    <div class="features-content">
-      <div class="ft 1">
-        <i class="ri-user-line"></i>
-        <p>Create a free account</p>
-      </div>
-      <div class="ft 2">
-        <i class="material-symbols-outlined">web_traffic</i>
-        <p>Sign in</p>
-      </div>
-      <div class="ft 3">
-        <i class="ri-add-circle-line"></i>
-        <p>Add tasks</p>
-      </div>
-      <div class="ft 4">
-        <i class="ri-flag-fill"></i>
-        <p>Set Priorities</p>
-      </div>
-      <div class="ft 5">
-        <i class="material-symbols-outlined">clock_loader_40</i>
-        <p>Track your progress</p>
-      </div>
-      <div class="ft 6">
-        <i class="ri-alarm-line"></i>
-        <p>Get regular reminders</p>
-      </div>
-      <div class="ft 7">
-        <i class="material-symbols-outlined">verified</i>
-        <p>Mark tasks completions</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="test-container" id="section-3">
-    <p class="test-head">Testimonials</p>
-    <div class="test-content">
-      <div class="test-item">
-        <div class="horizontal-line"></div>
-        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
-        <div class="test-details-container">
-          <img src="{{ url_for('static', filename='images/test-1.png') }}">
-          <div class="test-details-item">
-            <p>Big Girl</p>
-            <p class="prof">Social Media Influencer</p>
-          </div>
-        </div>
-      </div>
-      <div class="test-item">
-        <div class="horizontal-line"></div>
-        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
-        <div class="test-details-container">
-          <img src="{{ url_for('static', filename='images/test-2.png') }}" alt="">
-          <div class="test-details-item">
-            <p>Small Singh</p>
-            <p class="prof">Rang Panjab Label Founder</p>
-          </div>
-        </div>
-      </div>
-      <div class="test-item">
-        <div class="horizontal-line"></div>
-        <p class="test-text">Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable</p>
-        <div class="test-details-container">
-          <img src="{{ url_for('static', filename='images/test-3.png') }}" alt="">
-          <div class="test-details-item">
-            <p>Karen Not Karen</p>
-            <p class="prof">VJ at Green Chilis Radio</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="quotes-container" id="section-4">
-    <div class="q-item one">
-      <p class="q-text"><span class="mark">"</span> The key is not to prioritize what is on schedule, but to schedule your priorities.<span class="mark">"</span></p>
-      <p class="q-name">- Stephen R. Covey</p>
-    </div>
-    <div class="q-item two">
-      <p class="q-text"><span class="mark">"</span> Success is not about getting everything done, but getting the right things done at the right time.<span class="mark">"</span></p>
-      <p class="q-name">- Laura Stack</p>
-    </div>
-    <div class="q-item three">
-      <p class="q-text"><span class="mark">"</span> Let our advance worrying become advance thinking and planning.<span class="mark">"</span></p>
-      <p class="q-name">- Winston Churchill</p>
-    </div>
-  </div>
-  <div class="footer">
-    <a href="https://github.com/ali5917" target="_blank">Ali Kashif</a>
-    <p>-</p>
-    <a href="https://cs50.harvard.edu/x/2024/" target="_blank">CS50x</a>
-    <p>-</p>
-    <a href="https://github.com/ismailsilat7" target="_blank">Ismail Silat</a>
-  </div>
-
-  <button id="scroll-btn" title="Scroll to top">
-    <i class="ri-arrow-up-line"></i>
-  </button>
-
-
-
+  <script>
+    function showContentAfterDelay() {
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('index-page').style.display = 'block';
+      }, 1500);
+    }
+    window.onload = showContentAfterDelay;
+  </script>
+  
 
   <!-- Link your JavaScript file here -->
   <script src="{{ url_for('static', filename='script.js') }}"></script>
