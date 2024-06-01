@@ -532,14 +532,9 @@ html {
 }
 
 #preloader img {
-  width: 400px;
-  height: 300px;
-}
-
-.preloader-text {
-  font-family: 'Montserrat';
-  font-weight: 300;
-  letter-spacing: 1px;
+  width: 200px;
+  height: 200x;  
+  object-fit: cover;
 }
 
 #index-page {

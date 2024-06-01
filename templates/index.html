@@ -160,15 +160,14 @@
 
   <!-- preloader -->
   <div id="preloader">
-    <img src="{{ url_for('static', filename='images/preloader.gif') }}">
-    <h3 class="preloader-text">Redirecting ...</h3>
+    <img src="{{ url_for('static', filename='images/animated-preloader.gif') }}">
   </div>
   <script>
     function showContentAfterDelay() {
       setTimeout(() => {
         document.getElementById('preloader').style.display = 'none';
         document.getElementById('index-page').style.display = 'block';
-      }, 1500);
+      }, 2000);
     }
     window.onload = showContentAfterDelay;
   </script>
