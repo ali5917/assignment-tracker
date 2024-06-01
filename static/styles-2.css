@@ -1,0 +1,57 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 1em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom:30px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.logo a{
+  color: white;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}

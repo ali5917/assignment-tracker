@@ -513,11 +513,12 @@
   }
 }
 
-/* smooth scroll */
 html {
     scroll-behavior: smooth;
 }
 
+
+/* preloader css */
 #preloader {
   background-color: black;
   height: 100%;

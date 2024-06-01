@@ -9,21 +9,17 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/about")
-def about():
-    return "This is about page"
+@app.route("/sign-up")
+def sign_up():
+    return render_template("sign-up.html")
 
+@app.route("/sign-in")
+def sign_in():
+    return render_template("sign-in.html")
 
-
-
-
-
-
-
-
-
-
-
+@app.route("/change-password")
+def change_password():
+    return render_template("change-password.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

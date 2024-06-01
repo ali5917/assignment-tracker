@@ -141,3 +141,9 @@ const menus = document.getElementById('menus');
 hamburger.addEventListener('click',() => {
   menus.classList.toggle('show');  
 });
+
+// sing up button redirect
+
+document.querySelector('.sign-up').addEventListener('click', function() {
+  window.location.href = "/sign-up";
+});

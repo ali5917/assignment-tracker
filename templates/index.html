@@ -24,7 +24,7 @@
     data-logo-white="{{ url_for('static', filename='images/logo-b.png') }}">
       <div class="logo">
         <img src="{{ url_for('static', filename='images/logo-b.png') }}" alt="logo">
-        <a href="./index.html" class="logo-title">DueTrack</a>
+        <a href="./" class="logo-title">DueTrack</a>
       </div>
       <button class="hamburger" id="hamburger">
         <i class="ri-menu-line"></i>
@@ -42,9 +42,9 @@
           </div>
         </div>
         <a href="#features" class="feature about">Features</a>
-        <a href="#" class="sign-in">Sign in</a>
+        <a href="{{ url_for('sign_in') }}" class="sign-in">Sign in</a>
         <div class="start-box">
-          <a href="#" class="start">Start for free</a>
+          <a href="{{ url_for('sign_up') }}" class="start">Start for free</a>
         </div>
       </div>
     </div>
@@ -157,6 +157,7 @@
       <i class="ri-arrow-up-line"></i>
     </button>
   </div>
+
   <!-- preloader -->
   <div id="preloader">
     <img src="{{ url_for('static', filename='images/preloader.gif') }}">
@@ -173,7 +174,7 @@
   </script>
   
 
-  <!-- Link your JavaScript file here -->
+  <!-- JavaScript file -->
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
