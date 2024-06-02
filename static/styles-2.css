@@ -208,3 +208,12 @@ button:hover {
   color: black;
   background-color: white;
 }
+
+.change-pwd {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
