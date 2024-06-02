@@ -28,19 +28,40 @@
       </div>
       
       <div class="main-container">
-        <div class="up-form">
-          <div class="up-major">
+          <div class="up-form">
             <h2>Create <span style="display: block">new account</span></h2>
-            <div class="up-inputs">
-
-            </div>
-            <div class="up-submit">
-              <a href="#">Already have an account?</a>
-              <a href="#">Sign up</a>
-            </div>
+            <form action="/sign-up" method="post">
+              <div class="up-inputs">
+                <div class="input-container">
+                  <i class="ri-user-fill"></i>
+                  <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-container">
+                  <i class="ri-emotion-happy-line"></i>
+                  <input type="text" name="nickname" placeholder="Nickname (for authentication)" required>
+                </div>
+                <div class="input-container">
+                  <i class="ri-mail-fill"></i>
+                  <input type="text" name="name" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                  <i class="ri-lock-2-line"></i>
+                  <input type="password" name="pwd" placeholder="Password" id="pwd" required>
+                  <i class="ri-eye-close-line" style="font-size: 26px;cursor: pointer;" id="toggle-one"></i>
+                </div>
+                <div class="input-container">
+                  <i class="ri-lock-2-fill"></i>
+                  <input type="password" name="confirm-pwd" placeholder="Confirm Password" id="confirm-pwd" required disabled>
+                  <i class="ri-eye-close-line" style="font-size: 26px; cursor: pointer;" id="toggle-two"></i>
+                </div>
+              </div>
+              <div class="up-submit">
+                <a href="{{ url_for('sign_in') }}">Already have an account?</a>
+                <button type="submit">Sign up</button>
+              </div>
+            </form>
           </div>
-        </div>
-        <img src="" alt="">
+        <img class="up-img" src="{{ url_for('static', filename='images/up-img.gif') }}" alt="">
       </div>
 
 
@@ -54,6 +75,6 @@
 
     </div>
     <!-- JavaScript file -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script-2.js') }}"></script>
   </body>
 </html>
