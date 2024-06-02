@@ -33,5 +33,6 @@ pwdInput.addEventListener('input', () => {
 
   } else {
     confirmpwdInput.disabled = true
+    confirmpwdInput.value = ""
   }
 })

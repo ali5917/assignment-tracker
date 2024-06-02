@@ -72,7 +72,7 @@
                   <i class="ri-eye-close-line" style="font-size: 26px;cursor: pointer;" id="toggle-one"></i>
                 </div>
               </div>
-              <div class="change-pwd"><a href="">Forgot password?</a></div>
+              <div class="change-pwd"><a href="{{ url_for('change_password') }}">Forgot password?</a></div>
               <div class="in-submit">
                 <a href="{{ url_for('sign_up') }}">New here? <span style="display: block;">Create Account!</span></a>
                 <button type="submit">Sign in</button>
@@ -84,8 +84,20 @@
 
 
     </div>
-    <!-- JavaScript file -->
-    <script src="{{ url_for('static', filename='script-2.js') }}"></script>
+    <!-- JavaScript -->
+    <script>
+      const pwdInput = document.getElementById('pwd')
+      const toggleBtnOne = document.getElementById('toggle-one')
+      toggleBtnOne.addEventListener('click', ()=> {
+        if (pwdInput.type === 'password') {
+          pwdInput.type = 'text'
+          toggleBtnOne.className = 'ri-eye-line'
+        } else {
+          pwdInput.type = 'password'
+          toggleBtnOne.className = 'ri-eye-close-line'
+        }
+      })
+    </script>
   </body>
 </html>
 
