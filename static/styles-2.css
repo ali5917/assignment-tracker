@@ -146,6 +146,7 @@ input:disabled {
   border-radius: 30px;
   cursor: pointer;
   border: 2px solid black;
+  box-shadow: 0 0 8px black;
 }
 
 .up-submit {
@@ -198,6 +199,7 @@ input:disabled {
   cursor: pointer;
   border: solid 2px black;
   transform: all 0.3s ease;
+  box-shadow: 0 0 8px black;
 }
 
 .in-submit {
@@ -258,6 +260,7 @@ button:hover {
   border-radius: 40px;
   cursor: pointer;
   border: 2px solid black;
+  box-shadow: 0 0 8px black;
 }
 
 .change-submit button:hover {

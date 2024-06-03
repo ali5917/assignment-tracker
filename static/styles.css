@@ -191,6 +191,7 @@ body {
   font-weight: 700;
   align-self: flex-start;
   line-height: 80%;
+  text-shadow: 0 0 12px white;
 }
 
 .second {
@@ -198,6 +199,7 @@ body {
   font-weight: 600;
   align-self: flex-end;
   line-height: 80%;
+  text-shadow: 0 0 12px white;
 }
 
 .main-container button {
@@ -285,7 +287,7 @@ body {
 .test-content {
   display: flex;
   justify-content: center;
-  align-items: space-between ;
+  align-items: flex-start ; 
   gap: 5em;
 }
 
@@ -468,6 +470,9 @@ body {
   .q-name {
     font-size: 18px;
   }
+  .test-details-item p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -530,8 +535,19 @@ body {
   .quotes-container {
     gap: 3em;
   }
+
+  .test-details-item p {
+    font-size: 15px;
+  }
   
 }
+
+@media (max-width: 675px) {
+  .test-details-item p {
+    font-size: 12px;
+  }
+}
+
 
 @media (max-width: 650px) {
   .first, .second {
